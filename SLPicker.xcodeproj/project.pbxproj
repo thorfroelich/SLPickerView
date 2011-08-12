@@ -14,8 +14,8 @@
 		43FDC1CB13F51BFB00E2F20B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 43FDC1CA13F51BFB00E2F20B /* main.m */; };
 		43FDC1CF13F51BFB00E2F20B /* SLPickerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 43FDC1CE13F51BFB00E2F20B /* SLPickerAppDelegate.m */; };
 		43FDC1D213F51BFB00E2F20B /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43FDC1D013F51BFB00E2F20B /* MainWindow.xib */; };
-		43FDC1D513F51BFB00E2F20B /* SLPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43FDC1D413F51BFB00E2F20B /* SLPickerViewController.m */; };
-		43FDC1D813F51BFB00E2F20B /* SLPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43FDC1D613F51BFB00E2F20B /* SLPickerViewController.xib */; };
+		43FDC1E013F51C0500E2F20B /* SLPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43FDC1DE13F51C0500E2F20B /* SLPickerView.m */; };
+		43FDC1E313F51C6700E2F20B /* SLPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43FDC1E213F51C6700E2F20B /* SLPickerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,16 +23,17 @@
 		43FDC1BE13F51BFB00E2F20B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		43FDC1C013F51BFB00E2F20B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		43FDC1C213F51BFB00E2F20B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		43FDC1C613F51BFB00E2F20B /* SLPicker-Info.plist */ = {isa = PBXFileReference; path = "SLPicker-Info.plist"; sourceTree = "<group>"; };
+		43FDC1C613F51BFB00E2F20B /* SLPicker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SLPicker-Info.plist"; sourceTree = "<group>"; };
 		43FDC1C813F51BFB00E2F20B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		43FDC1CA13F51BFB00E2F20B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		43FDC1CC13F51BFB00E2F20B /* SLPicker-Prefix.pch */ = {isa = PBXFileReference; path = "SLPicker-Prefix.pch"; sourceTree = "<group>"; };
-		43FDC1CD13F51BFB00E2F20B /* SLPickerAppDelegate.h */ = {isa = PBXFileReference; path = SLPickerAppDelegate.h; sourceTree = "<group>"; };
+		43FDC1CC13F51BFB00E2F20B /* SLPicker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SLPicker-Prefix.pch"; sourceTree = "<group>"; };
+		43FDC1CD13F51BFB00E2F20B /* SLPickerAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLPickerAppDelegate.h; sourceTree = "<group>"; };
 		43FDC1CE13F51BFB00E2F20B /* SLPickerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLPickerAppDelegate.m; sourceTree = "<group>"; };
 		43FDC1D113F51BFB00E2F20B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		43FDC1D313F51BFB00E2F20B /* SLPickerViewController.h */ = {isa = PBXFileReference; path = SLPickerViewController.h; sourceTree = "<group>"; };
-		43FDC1D413F51BFB00E2F20B /* SLPickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLPickerViewController.m; sourceTree = "<group>"; };
-		43FDC1D713F51BFB00E2F20B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SLPickerViewController.xib; sourceTree = "<group>"; };
+		43FDC1DE13F51C0500E2F20B /* SLPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLPickerView.m; sourceTree = "<group>"; };
+		43FDC1DF13F51C0500E2F20B /* SLPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLPickerView.h; sourceTree = "<group>"; };
+		43FDC1E113F51C6700E2F20B /* SLPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLPickerViewController.h; sourceTree = "<group>"; };
+		43FDC1E213F51C6700E2F20B /* SLPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLPickerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,9 +83,10 @@
 				43FDC1CD13F51BFB00E2F20B /* SLPickerAppDelegate.h */,
 				43FDC1CE13F51BFB00E2F20B /* SLPickerAppDelegate.m */,
 				43FDC1D013F51BFB00E2F20B /* MainWindow.xib */,
-				43FDC1D313F51BFB00E2F20B /* SLPickerViewController.h */,
-				43FDC1D413F51BFB00E2F20B /* SLPickerViewController.m */,
-				43FDC1D613F51BFB00E2F20B /* SLPickerViewController.xib */,
+				43FDC1E113F51C6700E2F20B /* SLPickerViewController.h */,
+				43FDC1E213F51C6700E2F20B /* SLPickerViewController.m */,
+				43FDC1DF13F51C0500E2F20B /* SLPickerView.h */,
+				43FDC1DE13F51C0500E2F20B /* SLPickerView.m */,
 				43FDC1C513F51BFB00E2F20B /* Supporting Files */,
 			);
 			path = SLPicker;
@@ -153,7 +155,6 @@
 			files = (
 				43FDC1C913F51BFB00E2F20B /* InfoPlist.strings in Resources */,
 				43FDC1D213F51BFB00E2F20B /* MainWindow.xib in Resources */,
-				43FDC1D813F51BFB00E2F20B /* SLPickerViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,7 +167,8 @@
 			files = (
 				43FDC1CB13F51BFB00E2F20B /* main.m in Sources */,
 				43FDC1CF13F51BFB00E2F20B /* SLPickerAppDelegate.m in Sources */,
-				43FDC1D513F51BFB00E2F20B /* SLPickerViewController.m in Sources */,
+				43FDC1E013F51C0500E2F20B /* SLPickerView.m in Sources */,
+				43FDC1E313F51C6700E2F20B /* SLPickerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,14 +189,6 @@
 				43FDC1D113F51BFB00E2F20B /* en */,
 			);
 			name = MainWindow.xib;
-			sourceTree = "<group>";
-		};
-		43FDC1D613F51BFB00E2F20B /* SLPickerViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				43FDC1D713F51BFB00E2F20B /* en */,
-			);
-			name = SLPickerViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -284,6 +278,7 @@
 				43FDC1DD13F51BFB00E2F20B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
