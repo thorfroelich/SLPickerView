@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		433AD69613F54C56000D7ECD /* SLPickerViewLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 433AD69513F54C56000D7ECD /* SLPickerViewLabel.m */; };
+		433AD69A13F54D51000D7ECD /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = 433AD69813F54D51000D7ECD /* check.png */; };
+		433AD69B13F54D51000D7ECD /* check@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 433AD69913F54D51000D7ECD /* check@2x.png */; };
 		43FDC1BF13F51BFB00E2F20B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43FDC1BE13F51BFB00E2F20B /* UIKit.framework */; };
 		43FDC1C113F51BFB00E2F20B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43FDC1C013F51BFB00E2F20B /* Foundation.framework */; };
 		43FDC1C313F51BFB00E2F20B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43FDC1C213F51BFB00E2F20B /* CoreGraphics.framework */; };
@@ -19,6 +22,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		433AD69413F54C56000D7ECD /* SLPickerViewLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLPickerViewLabel.h; sourceTree = "<group>"; };
+		433AD69513F54C56000D7ECD /* SLPickerViewLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLPickerViewLabel.m; sourceTree = "<group>"; };
+		433AD69813F54D51000D7ECD /* check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check.png; sourceTree = "<group>"; };
+		433AD69913F54D51000D7ECD /* check@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check@2x.png"; sourceTree = "<group>"; };
 		43FDC1BA13F51BFB00E2F20B /* SLPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SLPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43FDC1BE13F51BFB00E2F20B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		43FDC1C013F51BFB00E2F20B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -87,6 +94,8 @@
 				43FDC1E213F51C6700E2F20B /* SLPickerViewController.m */,
 				43FDC1DF13F51C0500E2F20B /* SLPickerView.h */,
 				43FDC1DE13F51C0500E2F20B /* SLPickerView.m */,
+				433AD69413F54C56000D7ECD /* SLPickerViewLabel.h */,
+				433AD69513F54C56000D7ECD /* SLPickerViewLabel.m */,
 				43FDC1C513F51BFB00E2F20B /* Supporting Files */,
 			);
 			path = SLPicker;
@@ -95,6 +104,8 @@
 		43FDC1C513F51BFB00E2F20B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				433AD69813F54D51000D7ECD /* check.png */,
+				433AD69913F54D51000D7ECD /* check@2x.png */,
 				43FDC1C613F51BFB00E2F20B /* SLPicker-Info.plist */,
 				43FDC1C713F51BFB00E2F20B /* InfoPlist.strings */,
 				43FDC1CA13F51BFB00E2F20B /* main.m */,
@@ -155,6 +166,8 @@
 			files = (
 				43FDC1C913F51BFB00E2F20B /* InfoPlist.strings in Resources */,
 				43FDC1D213F51BFB00E2F20B /* MainWindow.xib in Resources */,
+				433AD69A13F54D51000D7ECD /* check.png in Resources */,
+				433AD69B13F54D51000D7ECD /* check@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +182,7 @@
 				43FDC1CF13F51BFB00E2F20B /* SLPickerAppDelegate.m in Sources */,
 				43FDC1E013F51C0500E2F20B /* SLPickerView.m in Sources */,
 				43FDC1E313F51C6700E2F20B /* SLPickerViewController.m in Sources */,
+				433AD69613F54C56000D7ECD /* SLPickerViewLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,6 +8,7 @@
 //
 
 #import "SLPickerViewController.h"
+#import "SLPickerViewLabel.h"
 
 @implementation SLPickerViewController
 
@@ -98,7 +99,7 @@
     {
         for (int i = 0; i < [self.pickerView numberOfRowsInComponent:0]; i++)
         {
-            UILabel *label = (UILabel *)[self.pickerView viewForRow:i forComponent:0];
+            SLPickerViewLabel *label = (SLPickerViewLabel *)[self.pickerView viewForRow:i forComponent:0];
             
             // Detect taps in the custom SLPickerView labels
             UITouch * touch = [touches anyObject];
@@ -108,6 +109,11 @@
                 // Move pickerview to tapped row
                 [self.pickerView selectRow:i inComponent:0 animated:YES];
                 NSLog(@"You chose %@", [self.pickerData objectAtIndex:i]);
+                label.checkMarkView.hidden = NO;
+            }
+            else
+            {
+                label.checkMarkView.hidden = YES;
             }
         }
     }
@@ -140,21 +146,17 @@
 
 - (UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view
 {
-    UILabel *label = (UILabel *)view;
+    SLPickerViewLabel *label = (SLPickerViewLabel *)view;
     
     if (!label)
     {
         // Customize your label (or any other type UIView) here
-        label = [[[UILabel alloc] initWithFrame:CGRectMake(0.0f, 0.0f, self.pickerView.bounds.size.width * 0.8, 44.0f)] autorelease];
-        label.font = [UIFont systemFontOfSize:26.0];
-        label.textAlignment = UITextAlignmentRight;
-        label.textColor = [UIColor blackColor];
-        label.backgroundColor = [UIColor clearColor];
+        label = [[[SLPickerViewLabel alloc] initWithFrame:CGRectMake(0.0f, 0.0f, self.pickerView.bounds.size.width * 0.8, 44.0f)] autorelease];
     }
     
     if (row < [self.pickerData count])
     {
-        label.text = (NSString *)[self.pickerData objectAtIndex:row];
+        label.label.text = (NSString *)[self.pickerData objectAtIndex:row];
     }
     
     return label;
