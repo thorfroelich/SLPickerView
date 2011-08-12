@@ -1,6 +1,6 @@
 The UIPickerView subclass contained in this project allows touch events that would otherwise get trapped by the picker to be forwarded to the picker's superview.
 
-It is useful for creating a picker that only makes a selection when the user taps an entry and not when an entry scrolls past the center indicator area, which is the default UIPickerView behaviour. For instance it can be used to reproduce the behaviour Mobile Safari exhibits when interacting with a dropdown menu.
+The picker only makes a selection when the user taps an entry and not when an entry scrolls past the center indicator area, which is the default UIPickerView behaviour. For the rows in the picker it also implements a custom UIView containing a checkmark, similar to the one seen in Mobile Safari.
 
 Thor Frølich
 
