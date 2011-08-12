@@ -1,0 +1,291 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		43FDC1BF13F51BFB00E2F20B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43FDC1BE13F51BFB00E2F20B /* UIKit.framework */; };
+		43FDC1C113F51BFB00E2F20B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43FDC1C013F51BFB00E2F20B /* Foundation.framework */; };
+		43FDC1C313F51BFB00E2F20B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43FDC1C213F51BFB00E2F20B /* CoreGraphics.framework */; };
+		43FDC1C913F51BFB00E2F20B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 43FDC1C713F51BFB00E2F20B /* InfoPlist.strings */; };
+		43FDC1CB13F51BFB00E2F20B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 43FDC1CA13F51BFB00E2F20B /* main.m */; };
+		43FDC1CF13F51BFB00E2F20B /* SLPickerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 43FDC1CE13F51BFB00E2F20B /* SLPickerAppDelegate.m */; };
+		43FDC1D213F51BFB00E2F20B /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43FDC1D013F51BFB00E2F20B /* MainWindow.xib */; };
+		43FDC1D513F51BFB00E2F20B /* SLPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43FDC1D413F51BFB00E2F20B /* SLPickerViewController.m */; };
+		43FDC1D813F51BFB00E2F20B /* SLPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43FDC1D613F51BFB00E2F20B /* SLPickerViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		43FDC1BA13F51BFB00E2F20B /* SLPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SLPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		43FDC1BE13F51BFB00E2F20B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		43FDC1C013F51BFB00E2F20B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		43FDC1C213F51BFB00E2F20B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		43FDC1C613F51BFB00E2F20B /* SLPicker-Info.plist */ = {isa = PBXFileReference; path = "SLPicker-Info.plist"; sourceTree = "<group>"; };
+		43FDC1C813F51BFB00E2F20B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		43FDC1CA13F51BFB00E2F20B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		43FDC1CC13F51BFB00E2F20B /* SLPicker-Prefix.pch */ = {isa = PBXFileReference; path = "SLPicker-Prefix.pch"; sourceTree = "<group>"; };
+		43FDC1CD13F51BFB00E2F20B /* SLPickerAppDelegate.h */ = {isa = PBXFileReference; path = SLPickerAppDelegate.h; sourceTree = "<group>"; };
+		43FDC1CE13F51BFB00E2F20B /* SLPickerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLPickerAppDelegate.m; sourceTree = "<group>"; };
+		43FDC1D113F51BFB00E2F20B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		43FDC1D313F51BFB00E2F20B /* SLPickerViewController.h */ = {isa = PBXFileReference; path = SLPickerViewController.h; sourceTree = "<group>"; };
+		43FDC1D413F51BFB00E2F20B /* SLPickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLPickerViewController.m; sourceTree = "<group>"; };
+		43FDC1D713F51BFB00E2F20B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SLPickerViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		43FDC1B713F51BFB00E2F20B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43FDC1BF13F51BFB00E2F20B /* UIKit.framework in Frameworks */,
+				43FDC1C113F51BFB00E2F20B /* Foundation.framework in Frameworks */,
+				43FDC1C313F51BFB00E2F20B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		43FDC1AF13F51BFB00E2F20B = {
+			isa = PBXGroup;
+			children = (
+				43FDC1C413F51BFB00E2F20B /* SLPicker */,
+				43FDC1BD13F51BFB00E2F20B /* Frameworks */,
+				43FDC1BB13F51BFB00E2F20B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		43FDC1BB13F51BFB00E2F20B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				43FDC1BA13F51BFB00E2F20B /* SLPicker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		43FDC1BD13F51BFB00E2F20B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43FDC1BE13F51BFB00E2F20B /* UIKit.framework */,
+				43FDC1C013F51BFB00E2F20B /* Foundation.framework */,
+				43FDC1C213F51BFB00E2F20B /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		43FDC1C413F51BFB00E2F20B /* SLPicker */ = {
+			isa = PBXGroup;
+			children = (
+				43FDC1CD13F51BFB00E2F20B /* SLPickerAppDelegate.h */,
+				43FDC1CE13F51BFB00E2F20B /* SLPickerAppDelegate.m */,
+				43FDC1D013F51BFB00E2F20B /* MainWindow.xib */,
+				43FDC1D313F51BFB00E2F20B /* SLPickerViewController.h */,
+				43FDC1D413F51BFB00E2F20B /* SLPickerViewController.m */,
+				43FDC1D613F51BFB00E2F20B /* SLPickerViewController.xib */,
+				43FDC1C513F51BFB00E2F20B /* Supporting Files */,
+			);
+			path = SLPicker;
+			sourceTree = "<group>";
+		};
+		43FDC1C513F51BFB00E2F20B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				43FDC1C613F51BFB00E2F20B /* SLPicker-Info.plist */,
+				43FDC1C713F51BFB00E2F20B /* InfoPlist.strings */,
+				43FDC1CA13F51BFB00E2F20B /* main.m */,
+				43FDC1CC13F51BFB00E2F20B /* SLPicker-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		43FDC1B913F51BFB00E2F20B /* SLPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43FDC1DB13F51BFB00E2F20B /* Build configuration list for PBXNativeTarget "SLPicker" */;
+			buildPhases = (
+				43FDC1B613F51BFB00E2F20B /* Sources */,
+				43FDC1B713F51BFB00E2F20B /* Frameworks */,
+				43FDC1B813F51BFB00E2F20B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SLPicker;
+			productName = SLPicker;
+			productReference = 43FDC1BA13F51BFB00E2F20B /* SLPicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		43FDC1B113F51BFB00E2F20B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Strange Loop";
+			};
+			buildConfigurationList = 43FDC1B413F51BFB00E2F20B /* Build configuration list for PBXProject "SLPicker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 43FDC1AF13F51BFB00E2F20B;
+			productRefGroup = 43FDC1BB13F51BFB00E2F20B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				43FDC1B913F51BFB00E2F20B /* SLPicker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		43FDC1B813F51BFB00E2F20B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43FDC1C913F51BFB00E2F20B /* InfoPlist.strings in Resources */,
+				43FDC1D213F51BFB00E2F20B /* MainWindow.xib in Resources */,
+				43FDC1D813F51BFB00E2F20B /* SLPickerViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		43FDC1B613F51BFB00E2F20B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43FDC1CB13F51BFB00E2F20B /* main.m in Sources */,
+				43FDC1CF13F51BFB00E2F20B /* SLPickerAppDelegate.m in Sources */,
+				43FDC1D513F51BFB00E2F20B /* SLPickerViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		43FDC1C713F51BFB00E2F20B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43FDC1C813F51BFB00E2F20B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		43FDC1D013F51BFB00E2F20B /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43FDC1D113F51BFB00E2F20B /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		43FDC1D613F51BFB00E2F20B /* SLPickerViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43FDC1D713F51BFB00E2F20B /* en */,
+			);
+			name = SLPickerViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		43FDC1D913F51BFB00E2F20B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		43FDC1DA13F51BFB00E2F20B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		43FDC1DC13F51BFB00E2F20B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SLPicker/SLPicker-Prefix.pch";
+				INFOPLIST_FILE = "SLPicker/SLPicker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		43FDC1DD13F51BFB00E2F20B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SLPicker/SLPicker-Prefix.pch";
+				INFOPLIST_FILE = "SLPicker/SLPicker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		43FDC1B413F51BFB00E2F20B /* Build configuration list for PBXProject "SLPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43FDC1D913F51BFB00E2F20B /* Debug */,
+				43FDC1DA13F51BFB00E2F20B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43FDC1DB13F51BFB00E2F20B /* Build configuration list for PBXNativeTarget "SLPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43FDC1DC13F51BFB00E2F20B /* Debug */,
+				43FDC1DD13F51BFB00E2F20B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 43FDC1B113F51BFB00E2F20B /* Project object */;
+}
