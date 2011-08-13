@@ -15,6 +15,8 @@
     SLPickerView *_pickerView;
     NSArray *_pickerData;
     
+    NSInteger currentPick;
+    
     //Bool used to distinguish between taps and scrolling
     BOOL touchDidMove;
 }

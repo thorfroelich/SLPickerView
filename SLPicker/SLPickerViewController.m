@@ -22,6 +22,7 @@
     if (self)
     {
         touchDidMove = NO;
+        currentPick = -1;
         
         // Init some dummy data for the picker view
         self.pickerData = [NSArray arrayWithObjects:
@@ -109,6 +110,7 @@
                 // Move pickerview to tapped row
                 [self.pickerView selectRow:i inComponent:0 animated:YES];
                 NSLog(@"You chose %@", [self.pickerData objectAtIndex:i]);
+                currentPick = i;
                 label.checkMarkView.hidden = NO;
             }
             else
@@ -157,6 +159,7 @@
     if (row < [self.pickerData count])
     {
         label.label.text = (NSString *)[self.pickerData objectAtIndex:row];
+        label.checkMarkView.hidden = !(row == currentPick);
     }
     
     return label;
