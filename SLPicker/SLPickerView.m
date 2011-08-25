@@ -20,7 +20,7 @@
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
 {
     [hitTestView touchesMoved:touches withEvent:event];
-    [self.superview touchesMoved:touches withEvent:event];
+    [super touchesMoved:touches withEvent:event];
 }
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
@@ -50,9 +50,13 @@
                 hitTestView = hit;
             }
         }
+        
+        return self;
     }
-    
-    return self;
+    else
+    {
+        return nil;
+    }
 }
 
 @end
