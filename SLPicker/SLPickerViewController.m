@@ -21,7 +21,6 @@
     
     if (self)
     {
-        touchDidMove = NO;
         currentPick = -1;
         
         // Init some dummy data for the picker view
@@ -31,7 +30,9 @@
                            @"Parts & Labor",
                            @"Gojira",
                            @"Omega Massif",
-                           @"Girl Talk", nil];
+                           @"Girl Talk",
+                           @"Movits",
+                           nil];
     }
     
     return self;
@@ -63,6 +64,12 @@
     self.pickerView.exclusiveTouch = NO;
     
     [self.view addSubview:self.pickerView];
+    
+    // Add a gesture recognizer to detect taps in pickerview
+    UITapGestureRecognizer *singleTap = [[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapInPickerView:)] autorelease];
+    [singleTap setNumberOfTapsRequired:1];
+    [singleTap setNumberOfTouchesRequired:1];
+    [self.pickerView addGestureRecognizer:singleTap];
 }
 
 
@@ -74,57 +81,30 @@
     
     self.pickerView = nil;
 }
-                       
-#pragma Mark - Touches
 
-- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+- (void)tapInPickerView:(UIGestureRecognizer *)sender
 {    
-    // Forward touches here if needed
-    
-    touchDidMove = NO;
-}
-
-- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
-{
-    // Forward touches here if needed
-    
-    touchDidMove = YES;
-}
-
-- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
-{
-    // Forward touches here if needed    
-    
-    // All UIPickerView selection is handled here!
-    if (!touchDidMove)
+    for (int i = 0; i < [self.pickerView numberOfRowsInComponent:0]; i++)
     {
-        for (int i = 0; i < [self.pickerView numberOfRowsInComponent:0]; i++)
+        SLPickerViewLabel *label = (SLPickerViewLabel *)[self.pickerView viewForRow:i forComponent:0];
+        
+        // Is tap contained in the label?
+        CGPoint point = [sender locationInView:label];
+        if (CGRectContainsPoint(label.frame, point))
         {
-            SLPickerViewLabel *label = (SLPickerViewLabel *)[self.pickerView viewForRow:i forComponent:0];
-            
-            // Detect taps in the custom SLPickerView labels
-            UITouch * touch = [touches anyObject];
-            CGPoint point = [touch locationInView:label];
-            if ([label pointInside:point withEvent:event])
-            {
-                // Move pickerview to tapped row
-                [self.pickerView selectRow:i inComponent:0 animated:YES];
-                NSLog(@"You chose %@", [self.pickerData objectAtIndex:i]);
-                currentPick = i;
-                label.checkMarkView.hidden = NO;
-            }
-            else
-            {
-                label.checkMarkView.hidden = YES;
-            }
+            // Move pickerview to tapped row
+            [self.pickerView selectRow:i inComponent:0 animated:YES];
+            NSLog(@"You chose %@", [self.pickerData objectAtIndex:i]);
+            currentPick = i;
+            label.checkMarkView.hidden = NO;
+        }
+        else
+        {
+            label.checkMarkView.hidden = YES;
         }
     }
 }
-
-- (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event
-{
-    // Forward touches here if needed
-}
+                       
 
 #pragma mark - UIPickerView data source and delegate protocols methods
 

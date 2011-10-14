@@ -16,8 +16,7 @@
 
 
 @interface SLPickerView : UIPickerView
-{
-    UIView *hitTestView;
-}
+
+- (UIView *)getNextResponderView:(NSSet *)touches withEvent:(UIEvent *)event;
 
 @end

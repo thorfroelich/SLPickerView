@@ -16,12 +16,11 @@
     NSArray *_pickerData;
     
     NSInteger currentPick;
-    
-    //Bool used to distinguish between taps and scrolling
-    BOOL touchDidMove;
 }
 
 @property (nonatomic, retain) SLPickerView *pickerView;
 @property (nonatomic, retain) NSArray *pickerData;
+
+- (void)tapInPickerView:(UIGestureRecognizer *)sender;
 
 @end
