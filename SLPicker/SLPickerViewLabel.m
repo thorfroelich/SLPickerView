@@ -20,7 +20,7 @@
         // Initialization code
         
         UIImage *check = [UIImage imageNamed:@"check.png"];
-        self.checkMarkView = [[[UIImageView alloc] initWithImage:check] autorelease];
+        self.checkMarkView = [[UIImageView alloc] initWithImage:check];
         self.checkMarkView.hidden = YES;
         self.checkMarkView.center = self.center;
         
@@ -30,7 +30,7 @@
         rect.origin.x = 10.0;
         self.checkMarkView.frame = rect;
         
-        self.label = [[[UILabel alloc] initWithFrame:self.frame] autorelease];
+        self.label = [[UILabel alloc] initWithFrame:self.frame];
         self.label.backgroundColor = [UIColor clearColor];
         self.label.font = [UIFont systemFontOfSize:26.0];
         
@@ -54,12 +54,5 @@
 }
 */
 
-- (void)dealloc
-{
-    self.checkMarkView = nil;
-    self.label = nil;
-    
-    [super dealloc];
-}
 
 @end

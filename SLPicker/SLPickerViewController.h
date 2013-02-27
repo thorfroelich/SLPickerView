@@ -15,11 +15,11 @@
     SLPickerView *_pickerView;
     NSArray *_pickerData;
     
-    NSInteger currentPick;
+    NSInteger _currentPick;
 }
 
-@property (nonatomic, retain) SLPickerView *pickerView;
-@property (nonatomic, retain) NSArray *pickerData;
+@property (nonatomic, strong) SLPickerView *pickerView;
+@property (nonatomic, strong) NSArray *pickerData;
 
 - (void)tapInPickerView:(UIGestureRecognizer *)sender;
 

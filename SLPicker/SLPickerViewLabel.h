@@ -10,7 +10,7 @@
 
 @interface SLPickerViewLabel : UIView
 
-@property (nonatomic, retain) UIImageView *checkMarkView;
-@property (nonatomic, retain) UILabel *label;
+@property (nonatomic, strong) UIImageView *checkMarkView;
+@property (nonatomic, strong) UILabel *label;
 
 @end

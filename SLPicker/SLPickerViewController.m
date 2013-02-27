@@ -21,7 +21,7 @@
     
     if (self)
     {
-        currentPick = -1;
+        _currentPick = -1;
         
         // Init some dummy data for the picker view
         self.pickerData = [NSArray arrayWithObjects:
@@ -54,7 +54,7 @@
     [super viewDidLoad];
     
     // Set up the custom pickerview
-    self.pickerView = [[[SLPickerView alloc] init] autorelease];
+    self.pickerView = [[SLPickerView alloc] init];
     CGRect pickerRect = self.pickerView.frame;
     pickerRect.origin.y = CGRectGetMidY(self.view.frame) - (pickerRect.size.height * 0.5);
     self.pickerView.frame = pickerRect;
@@ -66,7 +66,7 @@
     [self.view addSubview:self.pickerView];
     
     // Add a gesture recognizer to detect taps in pickerview
-    UITapGestureRecognizer *singleTap = [[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapInPickerView:)] autorelease];
+    UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapInPickerView:)];
     [singleTap setNumberOfTapsRequired:1];
     [singleTap setNumberOfTouchesRequired:1];
     [self.pickerView addGestureRecognizer:singleTap];
@@ -83,7 +83,10 @@
 }
 
 - (void)tapInPickerView:(UIGestureRecognizer *)sender
-{    
+{
+    NSMutableSet *deselectLabels = [NSMutableSet set];
+    BOOL shouldDeselectOthers = NO;
+    
     for (int i = 0; i < [self.pickerView numberOfRowsInComponent:0]; i++)
     {
         SLPickerViewLabel *label = (SLPickerViewLabel *)[self.pickerView viewForRow:i forComponent:0];
@@ -95,16 +98,25 @@
             // Move pickerview to tapped row
             [self.pickerView selectRow:i inComponent:0 animated:YES];
             NSLog(@"You chose %@", [self.pickerData objectAtIndex:i]);
-            currentPick = i;
+            _currentPick = i;
             label.checkMarkView.hidden = NO;
+            shouldDeselectOthers = YES;
         }
-        else
+        else if (label != nil)
+        {
+            [deselectLabels addObject:label];
+        }
+    }
+    
+    if (shouldDeselectOthers)
+    {
+        for (SLPickerViewLabel *label in deselectLabels)
         {
             label.checkMarkView.hidden = YES;
         }
     }
 }
-                       
+
 
 #pragma mark - UIPickerView data source and delegate protocols methods
 
@@ -133,13 +145,13 @@
     if (!label)
     {
         // Customize your label (or any other type UIView) here
-        label = [[[SLPickerViewLabel alloc] initWithFrame:CGRectMake(0.0f, 0.0f, self.pickerView.bounds.size.width * 0.8, 44.0f)] autorelease];
+        label = [[SLPickerViewLabel alloc] initWithFrame:CGRectMake(0.0f, 0.0f, self.pickerView.bounds.size.width * 0.8, 44.0f)];
     }
     
     if (row < [self.pickerData count])
     {
         label.label.text = (NSString *)[self.pickerData objectAtIndex:row];
-        label.checkMarkView.hidden = !(row == currentPick);
+        label.checkMarkView.hidden = !(row == _currentPick);
     }
     
     return label;
